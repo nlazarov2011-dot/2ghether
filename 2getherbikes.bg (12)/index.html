@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bg" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2getherbikes - Веломагазин и Сервиз Варна | Официален представител</title>
+    <meta name="description" content="Официален дилър на Orbea, Santa Cruz и Giant. Професионален велосипеден сервиз и колела под наем във Варна." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              neutral: {
+                950: '#0a0a0a', // Deep dark
+                900: '#171717',
+              },
+              brand: {
+                accent: '#06b6d4', // Cyan accent
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+    "zustand": "https://esm.sh/zustand@^5.0.9",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "zustand/": "https://esm.sh/zustand@^5.0.9/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.3",
+    "@stripe/stripe-js": "https://esm.sh/@stripe/stripe-js@^8.6.1",
+    "@stripe/react-stripe-js": "https://esm.sh/@stripe/react-stripe-js@^5.4.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-neutral-950 text-neutral-100 font-sans antialiased overflow-x-hidden selection:bg-brand-accent selection:text-black">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
